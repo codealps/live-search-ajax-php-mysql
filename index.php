@@ -49,7 +49,6 @@
    }
    input_box.addEventListener("keyup",(e)=>
    {
-       e.preventDefault();
     output.style.display="block"
 output.innerHTML=`<div class='progress'><div class='indeterminate'></div></div>`
 q=e.target.value
