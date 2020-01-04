@@ -53,7 +53,7 @@ e.preventDefault();
     output.innerHTML=""
     output.style.display="none"
    }
-   input_box.addEventListener("keyup",(e)=>
+   input_box.addEventListener("keydown",(e)=>
    {
     output.style.display="block"
 output.innerHTML=`<div class='progress'><div class='indeterminate'></div></div>`
