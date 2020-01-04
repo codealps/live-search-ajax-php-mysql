@@ -16,7 +16,7 @@
 <div class="col l6 offset-l3" style="margin-top:10%">
 <nav class="white">
     <div class="nav-wrapper">
-      <form autocomplete="off">
+      <form autocomplete="off" id="form">
         <div class="input-field">
           <input id="search" type="search" required>
           <label class="label-icon" for="search"><i class="material-icons blue-text">search</i></label>
@@ -41,6 +41,12 @@
    input_box=document.getElementById("search")
    output=document.getElementById("output")
    close_btn=document.getElementById("close")
+   form=document.getElementById("form")
+   form.addEventListener("submit",notsubmit)
+  function notsubmit(e)
+{
+e.preventDefault();
+}
    close_btn.onclick=function()
    {
     input_box.value=''
